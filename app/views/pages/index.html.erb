@@ -1,0 +1,11 @@
+<h1>MY Pages</h1>
+<% @pages.each do |page| %>
+  <%= page.title %>
+  <%= link_to 'Show Page', page_path(page) %>
+  <br />
+<% end %>
+<%= link_to 'New Page', new_page_path %>
+<!-- erb embedded ruby -->
+<!-- <%# <%non-echoing tag %> -->
+<!-- <%# <%=echoing tag %> -->
+<%# 2+1 %>
